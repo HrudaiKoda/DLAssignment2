@@ -37,5 +37,6 @@ Data Augmentation : True<br>
 <p>Consider ResNet or VGGNet models which are initially trained to classify an image into 1000 classes as the imagenet has 1000 classes,but considering the current objective of 10 class problem the model architecture must be altered.</p>
 <p>So need to first resize the image to 224 x 224 as the pretrained model was also trained upon the image of dimension 224 x 224 incase of ResNet</p>
 <p>The last output layer (Fully connected layer with 1000 output channel and be changed to 10 to accommodate the challenge to classify the images to required classes and also need to train this layer weights by keeping the rest intact during the training process.</p>
-
+<p>Another option would be to freeze the top k layers and train the rest (n-k) layer on the new dataset that is the problem statement for 10 class classification.</p>
+<p> Doing so resulted in an accuracy of 79.2% over 10 Epochs</p>
 
