@@ -18,3 +18,17 @@
 <p>Metrics: Model validation accuracy ~ 35%</p>
 <p>Metrics: Model Testing accuracy ~ 40.6%</p>
 
+<h4>Best Model Parameters: </h4>
+Activation Function: ELU<br>
+Batch Size: 64<br>
+Dropout : 0.2 <br>
+Epochs : 10<br>
+Filter Customization : [32,64,128,256,512]<br>
+Kernel Dimensions: [3,3,3,3,3]<br>
+Learning Rate : 1e-4<br>
+Optimizer : Adam<br>
+Weight Decay : 0.0005<br>
+Batch Normalization : True<br>
+Data Augmentation : True<br>
+
+
