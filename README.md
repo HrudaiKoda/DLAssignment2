@@ -39,4 +39,11 @@ Data Augmentation : True<br>
 <p>The last output layer (Fully connected layer with 1000 output channel and be changed to 10 to accommodate the challenge to classify the images to required classes and also need to train this layer weights by keeping the rest intact during the training process.</p>
 <p>Another option would be to freeze the top k layers and train the rest (n-k) layer on the new dataset that is the problem statement for 10 class classification.</p>
 <p> Doing so resulted in an accuracy of 79.2% over 10 Epochs</p>
+<h4>Configuration: </h4>
+Batchsize : 128 <br>
+Epochs : 10<br>
+Learning rate : 1e-3 <br>
+Input Image : 224 x 224 x 3<br>
+Dense Layer neurons : 512<br>
+
 
